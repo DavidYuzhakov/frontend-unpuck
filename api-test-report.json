@@ -1,0 +1,107 @@
+{
+  "timestamp": "2025-09-09T18:34:35.906Z",
+  "baseUrl": "http://localhost:3001",
+  "summary": {
+    "total": 19,
+    "passed": 0,
+    "failed": 19,
+    "successRate": 0
+  },
+  "details": [
+    {
+      "name": "POST /auth/register",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "POST /auth/login",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /auth/me",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "PUT /users/profile",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /users/referrals",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /users/balance",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /users/notifications",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /products",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "POST /products",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /products/my/products",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /deals",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /admin/stats",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /admin/messages",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /admin/users",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /chat/chats",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "POST /chat/chats",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /transactions",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "GET /transactions/stats",
+      "status": "FAIL",
+      "details": ""
+    },
+    {
+      "name": "POST /upload/file",
+      "status": "FAIL",
+      "details": ""
+    }
+  ]
+}

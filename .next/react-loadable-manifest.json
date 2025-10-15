@@ -1,0 +1,22 @@
+{
+  "app/manager/page.tsx -> @/lib/token-manager": {
+    "id": "app/manager/page.tsx -> @/lib/token-manager",
+    "files": []
+  },
+  "app/moderation/page.tsx -> @/lib/token-manager": {
+    "id": "app/moderation/page.tsx -> @/lib/token-manager",
+    "files": []
+  },
+  "components/providers.tsx -> ./utils/eruda-init": {
+    "id": "components/providers.tsx -> ./utils/eruda-init",
+    "files": [
+      "static/chunks/_app-pages-browser_src_components_utils_eruda-init_tsx.js"
+    ]
+  },
+  "components/utils/eruda-init.tsx -> eruda": {
+    "id": "components/utils/eruda-init.tsx -> eruda",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_eruda_eruda_js.js"
+    ]
+  }
+}

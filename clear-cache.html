@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Очистка кеша</title>
+</head>
+<body>
+    <h1>Очистка кеша приложения</h1>
+    <button onclick="clearCache()">Очистить кеш</button>
+    <div id="result"></div>
+
+    <script>
+        function clearCache() {
+            try {
+                // Очищаем localStorage
+                localStorage.clear();
+                console.log('✅ localStorage очищен');
+                
+                // Очищаем sessionStorage
+                sessionStorage.clear();
+                console.log('✅ sessionStorage очищен');
+                
+                // Очищаем IndexedDB
+                if ('indexedDB' in window) {
+                    indexedDB.databases().then(databases => {
+                        databases.forEach(db => {
+                            indexedDB.deleteDatabase(db.name);
+                        });
+                        console.log('✅ IndexedDB очищен');
+                    });
+                }
+                
+                // Очищаем кеш Service Worker
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.getRegistrations().then(registrations => {
+                        registrations.forEach(registration => {
+                            registration.unregister();
+                        });
+                        console.log('✅ Service Worker очищен');
+                    });
+                }
+                
+                document.getElementById('result').innerHTML = 
+                    '<p style="color: green;">✅ Кеш очищен! Теперь перезагрузите страницу.</p>';
+                
+                // Перезагружаем страницу через 2 секунды
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 2000);
+                
+            } catch (error) {
+                console.error('❌ Ошибка очистки кеша:', error);
+                document.getElementById('result').innerHTML = 
+                    '<p style="color: red;">❌ Ошибка очистки кеша: ' + error.message + '</p>';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

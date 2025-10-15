@@ -1,0 +1,27 @@
+yarn run v1.22.22
+$ next dev
+  ▲ Next.js 14.2.32
+  - Local:        http://localhost:4000
+
+ ✓ Starting...
+> [PWA] PWA support is disabled
+> [PWA] PWA support is disabled
+ ✓ Ready in 6.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 9.7s (1209 modules)
+ HEAD / 200 in 10254ms
+ ✓ Compiled in 994ms (608 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 862ms (1187 modules)
+ GET / 404 in 1320ms
+ GET /_next/static/css/app/layout.css?v=1757761553295 404 in 208ms
+ GET /_next/static/chunks/main-app.js?v=1757761553295 404 in 335ms
+ GET /_next/static/chunks/app/not-found.js 404 in 169ms
+ GET /_next/static/chunks/app/layout.js 404 in 167ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 183ms
+ GET /_next/static/chunks/app/error.js 404 in 171ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2.7s (1414 modules)
+ GET / 404 in 2894ms
+[?25h
+Done in 90.99s.
